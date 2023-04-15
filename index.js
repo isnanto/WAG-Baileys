@@ -98,6 +98,9 @@ app.get("/device", (req, res) => {
 app.get("/scan/:id", (req, res) => {
   res.sendFile(__dirname + "/core//index.html");
 });
+app.get("/buku", (req, res) => {
+  res.sendFile(__dirname + "/core//buku.html");
+});
 
 app.post(
   "/send",
